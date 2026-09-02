@@ -1,0 +1,362 @@
+/* ==========================================================================
+   Wavelength One — shared styles
+   Design tokens: ink (near-black, blue-slate), paper (record-label cream),
+   brass (hardware accent), signal (VU-needle red, used only for emphasis/CTA)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+  --ink:        #14171B;
+  --ink-2:      #1B1F24;
+  --ink-3:      #21262C;
+  --line-dark:  rgba(243,239,230,0.14);
+  --paper:      #ECE6D6;
+  --paper-2:    #E1DAC5;
+  --charcoal:   #22262B;
+  --brass:      #B4884F;
+  --brass-light:#D9B98A;
+  --signal:     #C1432B;
+  --ivory:      #F3EFE6;
+  --ivory-dim:  rgba(243,239,230,0.68);
+
+  --bs-body-bg: var(--ink);
+  --bs-body-color: var(--ivory);
+  --bs-border-color: var(--line-dark);
+  --bs-link-color: var(--brass-light);
+  --bs-link-hover-color: var(--ivory);
+}
+
+html{ scroll-behavior: smooth; }
+
+body{
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--ink);
+  color: var(--ivory);
+}
+
+.font-display{
+  font-family: 'Fraunces', Georgia, serif;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+
+.font-mono{
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.measure{ max-width: 62ch; }
+
+a{ text-decoration: none; }
+
+/* ---------- Section rhythm ---------- */
+.section{ padding-block: clamp(3.5rem, 6vw, 6.5rem); }
+.section-paper{
+  background-color: var(--paper);
+  color: var(--charcoal);
+}
+.section-ink-2{ background-color: var(--ink-2); }
+.hairline-top{ border-top: 1px solid var(--line-dark); }
+.hairline{ border-color: var(--line-dark) !important; }
+.section-paper .hairline{ border-color: rgba(34,38,43,0.14) !important; }
+
+/* ---------- Navbar ---------- */
+.wl-navbar{
+  background-color: rgba(20,23,27,0.92);
+  backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--line-dark);
+}
+.wl-brand{
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--ivory) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+}
+.wl-brand .mark{
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--brass);
+  position: relative;
+  flex: none;
+}
+.wl-brand .mark::after{
+  content: "";
+  position: absolute; inset: 6px;
+  border-radius: 50%;
+  background: var(--brass);
+}
+.wl-navbar .nav-link{
+  color: var(--ivory-dim);
+  font-weight: 500;
+  padding-inline: 1rem !important;
+}
+.wl-navbar .nav-link:hover,
+.wl-navbar .nav-link.active{
+  color: var(--ivory);
+}
+.wl-navbar .nav-link.active{
+  position: relative;
+}
+.wl-navbar .nav-link.active::after{
+  content:"";
+  position:absolute; left: 1rem; right: 1rem; bottom: 2px;
+  height: 2px; background: var(--brass);
+}
+
+/* ---------- Buttons ---------- */
+.btn-brass{
+  background-color: var(--brass);
+  border-color: var(--brass);
+  color: #191307;
+  font-weight: 600;
+}
+.btn-brass:hover, .btn-brass:focus{
+  background-color: var(--brass-light);
+  border-color: var(--brass-light);
+  color: #191307;
+}
+.btn-outline-ivory{
+  border-color: var(--line-dark);
+  color: var(--ivory);
+  font-weight: 500;
+}
+.btn-outline-ivory:hover{
+  border-color: var(--ivory);
+  color: var(--ivory);
+  background-color: rgba(243,239,230,0.06);
+}
+.btn-signal{
+  background-color: var(--signal);
+  border-color: var(--signal);
+  color: var(--ivory);
+  font-weight: 600;
+}
+.btn-signal:hover{
+  background-color: #a83a26;
+  border-color: #a83a26;
+  color: var(--ivory);
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  padding-block: clamp(3rem, 8vw, 7rem) clamp(2.5rem, 6vw, 4rem);
+}
+.hero h1{
+  font-size: clamp(2.4rem, 4.2vw, 4rem);
+  line-height: 1.05;
+}
+.hero .lede{
+  font-size: 1.15rem;
+  color: var(--ivory-dim);
+}
+
+/* ---------- Spec strip ---------- */
+.spec-strip{
+  border-top: 1px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
+}
+.spec-strip .spec-item{
+  padding-block: 1.25rem;
+}
+.spec-strip .spec-item .num{
+  font-family: 'Space Mono', monospace;
+  font-size: 1.1rem;
+  color: var(--brass-light);
+}
+.spec-strip .spec-item .lbl{
+  font-size: .85rem;
+  color: var(--ivory-dim);
+}
+@media (min-width: 768px){
+  .spec-strip .col-md-3 + .col-md-3{
+    border-left: 1px solid var(--line-dark);
+  }
+}
+
+/* ---------- Turntable illustration ---------- */
+.platter-spin{
+  animation: spin 6s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes spin{ to{ transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce){
+  .platter-spin{ animation: none; }
+}
+
+/* ---------- Cards ---------- */
+.craft-card{
+  background-color: var(--ink-2);
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  padding: 1.75rem;
+  height: 100%;
+}
+.craft-card .idx{
+  font-family: 'Space Mono', monospace;
+  color: var(--brass);
+  font-size: .85rem;
+}
+
+.press-card{
+  background-color: var(--ink-2);
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  padding: 1.75rem;
+  height: 100%;
+}
+.press-card .pub{
+  font-size: .85rem;
+  color: var(--brass-light);
+}
+
+/* ---------- Pull quote ---------- */
+.pull-quote{
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+  line-height: 1.35;
+}
+
+/* ---------- Tables ---------- */
+.table-spec{
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--ivory);
+  --bs-table-border-color: var(--line-dark);
+}
+.table-spec th{
+  color: var(--ivory-dim);
+  font-weight: 500;
+  width: 40%;
+}
+.table-compare thead th{
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+}
+.table-compare td, .table-compare th{ vertical-align: middle; }
+
+/* ---------- Accordion ---------- */
+.accordion-item{
+  background-color: var(--ink-2);
+  border-color: var(--line-dark);
+}
+.accordion-button{
+  background-color: var(--ink-2);
+  color: var(--ivory);
+  font-weight: 500;
+}
+.accordion-button:not(.collapsed){
+  background-color: var(--ink-3);
+  color: var(--brass-light);
+  box-shadow: none;
+}
+.accordion-button::after{
+  filter: invert(1) opacity(0.65);
+}
+.accordion-button:focus{ box-shadow: none; border-color: var(--line-dark); }
+
+/* ---------- Progress bars ---------- */
+.progress{
+  background-color: var(--ink-3);
+  height: .5rem;
+}
+.progress-bar{ background-color: var(--brass); }
+
+/* ---------- Forms ---------- */
+.form-control, .form-select{
+  background-color: var(--ink-2);
+  border-color: var(--line-dark);
+  color: var(--ivory);
+}
+.form-control:focus, .form-select:focus{
+  background-color: var(--ink-2);
+  border-color: var(--brass);
+  color: var(--ivory);
+  box-shadow: 0 0 0 .2rem rgba(180,136,79,0.25);
+}
+.form-control::placeholder{ color: rgba(243,239,230,0.35); }
+.form-label{ color: var(--ivory-dim); font-size: .9rem; }
+.form-check-input{
+  background-color: var(--ink-3);
+  border-color: var(--line-dark);
+}
+.form-check-input:checked{
+  background-color: var(--brass);
+  border-color: var(--brass);
+}
+
+/* Finish swatches */
+.swatch-input{ display:none; }
+.swatch-label{
+  display: flex; align-items: center; gap: .65rem;
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  padding: .65rem .9rem;
+  cursor: pointer;
+  color: var(--ivory-dim);
+}
+.swatch-label .chip{
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.swatch-input:checked + .swatch-label{
+  border-color: var(--brass);
+  color: var(--ivory);
+  background-color: rgba(180,136,79,0.08);
+}
+
+/* Order summary */
+.order-summary{
+  background-color: var(--ink-2);
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+}
+
+/* ---------- Footer ---------- */
+.wl-footer{
+  background-color: #0F1215;
+  border-top: 1px solid var(--line-dark);
+  padding-block: 3rem 2rem;
+}
+.wl-footer a{ color: var(--ivory-dim); }
+.wl-footer a:hover{ color: var(--ivory); }
+.wl-footer .fine{ color: rgba(243,239,230,0.45); font-size: .82rem; }
+
+/* ---------- Misc ---------- */
+.badge-trust{
+  background-color: var(--ink-3);
+  color: var(--ivory-dim);
+  border: 1px solid var(--line-dark);
+  font-weight: 500;
+  font-size: .78rem;
+  padding: .5rem .75rem;
+}
+.rating-num{
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 3.25rem;
+  line-height: 1;
+}
+.star{ color: var(--brass); }
+
+/* ---------- Utilities ---------- */
+.text-ivory{ color: var(--ivory) !important; }
+.text-ivory-dim{ color: var(--ivory-dim) !important; }
+.text-brass{ color: var(--brass-light) !important; }
+.text-charcoal{ color: var(--charcoal) !important; }
+.bg-ink{ background-color: var(--ink) !important; }
+.bg-ink-2{ background-color: var(--ink-2) !important; }
+.icon-chip{
+  width: 42px; height: 42px;
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--brass-light);
+  flex: none;
+}
+.section-paper .icon-chip{ border-color: rgba(34,38,43,0.18); color: var(--signal); }
+
+::selection{ background: var(--brass); color: #191307; }

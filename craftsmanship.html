@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Craftsmanship — Wavelength One</title>
+<meta name="description" content="How Wavelength One is engineered: materials, tolerances, and full specifications.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg wl-navbar sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand wl-brand" href="index.html"><span class="mark"></span>Wavelength</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="craftsmanship.html">Craftsmanship</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-brass btn-sm px-3 w-100" href="order.html">Reserve — $649</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HEADER ============ -->
+<header class="hero pb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="font-display fw-semibold mb-4">Every part earns its place.</h1>
+        <p class="lede measure mb-0">Wavelength One has no components chosen to hit a price point. Each part was chosen, tested, and sometimes machined in-house because it measurably changed what you hear.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MATERIALS, ALTERNATING ============ -->
+<section class="section pt-3">
+  <div class="container">
+
+    <div class="row align-items-center gy-4 mb-5 pb-4 hairline-top pt-5">
+      <div class="col-lg-6">
+        <svg viewBox="0 0 400 260" class="w-100 h-auto" role="img" aria-label="Diagram of the plinth cross-section">
+          <rect x="20" y="150" width="360" height="60" rx="6" fill="var(--ink-2)" stroke="var(--brass)" stroke-width="2"/>
+          <rect x="20" y="150" width="360" height="14" fill="var(--ink-3)"/>
+          <circle cx="60" cy="222" r="14" fill="var(--ink-3)" stroke="var(--line-dark)"/>
+          <circle cx="200" cy="222" r="14" fill="var(--ink-3)" stroke="var(--line-dark)"/>
+          <circle cx="340" cy="222" r="14" fill="var(--ink-3)" stroke="var(--line-dark)"/>
+          <line x1="60" y1="210" x2="60" y2="150" stroke="var(--line-dark)" stroke-dasharray="3 3"/>
+          <line x1="340" y1="210" x2="340" y2="150" stroke="var(--line-dark)" stroke-dasharray="3 3"/>
+          <text x="200" y="185" text-anchor="middle" class="font-mono" style="font-size:10px; fill:var(--ivory-dim);">CAST ALUMINUM CORE</text>
+          <text x="200" y="130" text-anchor="middle" class="font-mono" style="font-size:10px; fill:var(--brass-light);">WALNUT / ASH VENEER</text>
+          <text x="200" y="252" text-anchor="middle" class="font-mono" style="font-size:9px; fill:var(--ivory-dim); opacity:.7;">DAMPED ISOLATION FEET (×3)</text>
+        </svg>
+      </div>
+      <div class="col-lg-6">
+        <p class="text-brass small font-mono mb-2">PLINTH</p>
+        <h2 class="font-display fw-semibold mb-3" style="font-size:1.75rem;">A quiet base, on purpose.</h2>
+        <p class="text-ivory-dim measure">The plinth is a cast-aluminum shell wrapped in a walnut or ash veneer, floated on three elastomer-damped feet. Its density and internal bracing are tuned to push resonant frequencies well below the audio band, so footsteps and shelf vibration stay out of the groove.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-center gy-4 mb-5 pb-4 hairline-top pt-5">
+      <div class="col-lg-6 order-lg-2">
+        <svg viewBox="0 0 400 260" class="w-100 h-auto" role="img" aria-label="Diagram of the platter and motor assembly">
+          <circle cx="200" cy="130" r="95" fill="none" stroke="var(--brass)" stroke-width="2"/>
+          <circle cx="200" cy="130" r="70" fill="none" stroke="rgba(243,239,230,0.15)"/>
+          <circle cx="200" cy="130" r="45" fill="none" stroke="rgba(243,239,230,0.15)"/>
+          <circle cx="200" cy="130" r="6" fill="var(--brass)"/>
+          <rect x="40" y="215" width="46" height="26" rx="4" fill="var(--ink-2)" stroke="var(--line-dark)"/>
+          <text x="63" y="232" text-anchor="middle" class="font-mono" style="font-size:8px; fill:var(--ivory-dim);">DC</text>
+          <path d="M86 224 L165 165" stroke="var(--ivory-dim)" stroke-width="2" stroke-dasharray="2 4"/>
+          <text x="200" y="30" text-anchor="middle" class="font-mono" style="font-size:10px; fill:var(--brass-light);">1.6 KG MACHINED ALUMINUM</text>
+          <text x="63" y="250" text-anchor="middle" class="font-mono" style="font-size:8px; fill:var(--ivory-dim); opacity:.7;">MOTOR, BELT-COUPLED</text>
+        </svg>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <p class="text-brass small font-mono mb-2">PLATTER &amp; DRIVE</p>
+        <h2 class="font-display fw-semibold mb-3" style="font-size:1.75rem;">Weight where it helps, decoupled where it matters.</h2>
+        <p class="text-ivory-dim measure">A 1.6 kg machined-aluminum platter stores enough rotational energy to shrug off small speed disturbances. It's turned by a low-torque DC motor through an elastic belt, which mechanically isolates platter from motor noise — the reason belt-drive decks read quieter on a phono stage.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-center gy-4 mb-5 pb-4 hairline-top pt-5">
+      <div class="col-lg-6">
+        <svg viewBox="0 0 400 260" class="w-100 h-auto" role="img" aria-label="Diagram of the tonearm and cartridge">
+          <circle cx="70" cy="60" r="16" fill="var(--ink-2)" stroke="var(--brass)" stroke-width="2"/>
+          <line x1="70" y1="60" x2="300" y2="190" stroke="var(--brass)" stroke-width="4" stroke-linecap="round"/>
+          <rect x="290" y="180" width="34" height="18" rx="2" fill="var(--brass)" transform="rotate(33 307 189)"/>
+          <circle cx="45" cy="40" r="9" fill="var(--ink-3)" stroke="var(--line-dark)"/>
+          <text x="70" y="105" text-anchor="middle" class="font-mono" style="font-size:9px; fill:var(--ivory-dim);">GIMBAL BEARING PIVOT</text>
+          <text x="270" y="225" text-anchor="middle" class="font-mono" style="font-size:9px; fill:var(--brass-light);">MOVING-MAGNET CARTRIDGE</text>
+          <text x="45" y="20" text-anchor="middle" class="font-mono" style="font-size:8px; fill:var(--ivory-dim); opacity:.7;">COUNTERWEIGHT</text>
+        </svg>
+      </div>
+      <div class="col-lg-6">
+        <p class="text-brass small font-mono mb-2">TONEARM &amp; CARTRIDGE</p>
+        <h2 class="font-display fw-semibold mb-3" style="font-size:1.75rem;">Light, rigid, and set correctly from the factory.</h2>
+        <p class="text-ivory-dim measure">The carbon-fiber tonearm rides on gimbal bearings for near-zero friction in every direction. Tracking force, anti-skate, and cartridge alignment are set and verified before the deck leaves the workshop — you just drop the needle.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FULL SPECS ============ -->
+<section class="section section-ink-2 hairline-top">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-lg-6">
+        <h2 class="font-display fw-semibold" style="font-size:2rem;">Full specifications.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="table-responsive">
+          <table class="table table-spec table-borderless font-mono small align-middle">
+            <tbody>
+              <tr><th scope="row">Drive type</th><td>Belt-drive, decoupled DC motor</td></tr>
+              <tr><th scope="row">Speeds</th><td>33⅓ and 45 RPM, manual selector</td></tr>
+              <tr><th scope="row">Wow &amp; flutter</th><td>± 0.09% (WRMS)</td></tr>
+              <tr><th scope="row">Signal-to-noise</th><td>68 dB, unweighted</td></tr>
+              <tr><th scope="row">Platter</th><td>Machined aluminum, 1.6 kg, acrylic mat</td></tr>
+              <tr><th scope="row">Tonearm</th><td>Carbon fiber, gimbal bearing, 8.5 g effective mass</td></tr>
+              <tr><th scope="row">Cartridge</th><td>Moving-magnet, pre-mounted and aligned</td></tr>
+              <tr><th scope="row">Plinth finishes</th><td>Walnut veneer, ash veneer, matte black</td></tr>
+              <tr><th scope="row">Dimensions</th><td>430 × 360 × 118 mm (W × D × H)</td></tr>
+              <tr><th scope="row">Weight</th><td>5.4 kg, unpacked</td></tr>
+              <tr><th scope="row">Outputs</th><td>RCA, unbalanced, with ground lug</td></tr>
+              <tr><th scope="row">Power</th><td>External 15 V DC supply, 100–240 V input</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARISON ============ -->
+<section class="section">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-lg-7">
+        <h2 class="font-display fw-semibold mb-2" style="font-size:2rem;">How it compares.</h2>
+        <p class="text-ivory-dim measure mb-0">Belt-drive and direct-drive decks trade off in different places. Here's where Wavelength One sits against a typical deck from each category.</p>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-compare align-middle text-center">
+        <thead>
+          <tr>
+            <th scope="col" class="text-start">Feature</th>
+            <th scope="col" class="text-brass">Wavelength One</th>
+            <th scope="col" class="text-ivory-dim">Typical belt-drive</th>
+            <th scope="col" class="text-ivory-dim">Typical direct-drive</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-start">Factory-aligned cartridge</td>
+            <td><i class="bi bi-check-lg text-brass fs-5"></i></td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+          </tr>
+          <tr>
+            <td class="text-start">Motor noise isolation</td>
+            <td><i class="bi bi-check-lg text-brass fs-5"></i></td>
+            <td><i class="bi bi-check-lg text-ivory-dim fs-5"></i></td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+          </tr>
+          <tr>
+            <td class="text-start">Instant speed stability</td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+            <td><i class="bi bi-check-lg text-ivory-dim fs-5"></i></td>
+          </tr>
+          <tr>
+            <td class="text-start">Gimbal-bearing tonearm</td>
+            <td><i class="bi bi-check-lg text-brass fs-5"></i></td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+          </tr>
+          <tr>
+            <td class="text-start">5-year warranty</td>
+            <td><i class="bi bi-check-lg text-brass fs-5"></i></td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+            <td><i class="bi bi-dash text-ivory-dim"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small text-ivory-dim mb-0">Comparisons reflect typical decks in the same price tier, not any single named product.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-ink-2 hairline-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <h2 class="font-display fw-semibold mb-4" style="font-size:2rem;">Build questions.</h2>
+        <div class="accordion" id="buildFaq">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">
+                Do I need to set up the cartridge myself?
+              </button>
+            </h3>
+            <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#buildFaq">
+              <div class="accordion-body text-ivory-dim">No. Tracking force, anti-skate, and alignment are set on the bench before your unit ships. You can fine-tune later if you switch cartridges.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">
+                Can I replace the cartridge later?
+              </button>
+            </h3>
+            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#buildFaq">
+              <div class="accordion-body text-ivory-dim">Yes. The headshell uses a standard mount, so most moving-magnet cartridges are a straightforward swap.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">
+                Does it need a separate phono preamp?
+              </button>
+            </h3>
+            <div id="f3" class="accordion-collapse collapse" data-bs-parent="#buildFaq">
+              <div class="accordion-body text-ivory-dim">Yes — Wavelength One outputs a phono-level signal, so it needs a phono stage or an amplifier with a built-in phono input.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">
+                What's covered under the 5-year warranty?
+              </button>
+            </h3>
+            <div id="f4" class="accordion-collapse collapse" data-bs-parent="#buildFaq">
+              <div class="accordion-body text-ivory-dim">Motor, bearings, and electronics against manufacturing defects. Stylus wear and accidental damage aren't covered. Full terms are on the order page.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section py-5">
+  <div class="container">
+    <div class="row align-items-center gy-4 bg-ink-2 rounded-1 p-4 p-md-5" style="border:1px solid var(--line-dark);">
+      <div class="col-md-8">
+        <h2 class="font-display fw-semibold mb-2" style="font-size:1.75rem;">Ready to hear the difference?</h2>
+        <p class="text-ivory-dim mb-0">Choose a finish and reserve your place in the current build batch.</p>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <a href="order.html" class="btn btn-brass btn-lg px-4">Reserve — $649</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="wl-footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="wl-brand d-inline-flex mb-3" href="index.html"><span class="mark"></span>Wavelength</a>
+        <p class="fine measure">Wavelength Audio designs turntables in Portland, Oregon. Wavelength One is assembled to order in small batches.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="text-ivory mb-3">Site</h6>
+        <ul class="list-unstyled d-grid gap-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="craftsmanship.html">Craftsmanship</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="order.html">Order</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="text-ivory mb-3">Support</h6>
+        <ul class="list-unstyled d-grid gap-2">
+          <li><a href="reviews.html#faq">FAQ</a></li>
+          <li><a href="order.html#guarantee">Warranty</a></li>
+          <li><a href="order.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="text-ivory mb-3">Stay in the loop</h6>
+        <form class="d-flex gap-2" onsubmit="return false;">
+          <label for="footerEmail2" class="visually-hidden">Email address</label>
+          <input id="footerEmail2" type="email" class="form-control" placeholder="you@email.com">
+          <button class="btn btn-outline-ivory" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <hr class="hairline my-4">
+    <p class="fine mb-0">© 2026 Wavelength Audio. Concept design for demonstration purposes only — not an active store.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

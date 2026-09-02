@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order — Wavelength One</title>
+<meta name="description" content="Choose a finish and reserve your Wavelength One turntable.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg wl-navbar sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand wl-brand" href="index.html"><span class="mark"></span>Wavelength</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="craftsmanship.html">Craftsmanship</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="order.html">Order</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-brass btn-sm px-3 w-100" href="#configure">Reserve — $649</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HEADER ============ -->
+<header class="hero pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="font-display fw-semibold mb-4">Reserve your Wavelength One.</h1>
+        <p class="lede measure mb-0">Pick a finish, add anything you need to get started, and hold your place in the current build batch. A refundable deposit is due today; the balance is due before your unit ships.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="section-ink-2 hairline-top py-4">
+  <div class="container">
+    <div class="row row-cols-2 row-cols-md-4 g-3 text-center">
+      <div class="col"><span class="badge-trust d-inline-flex align-items-center gap-2"><i class="bi bi-arrow-repeat"></i>100-night home trial</span></div>
+      <div class="col"><span class="badge-trust d-inline-flex align-items-center gap-2"><i class="bi bi-shield-check"></i>5-year warranty</span></div>
+      <div class="col"><span class="badge-trust d-inline-flex align-items-center gap-2"><i class="bi bi-truck"></i>Free ground shipping</span></div>
+      <div class="col"><span class="badge-trust d-inline-flex align-items-center gap-2"><i class="bi bi-tools"></i>Aligned before it ships</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONFIGURATOR + FORM ============ -->
+<section id="configure" class="section">
+  <div class="container">
+    <form id="orderForm" class="row gy-5 needs-validation" novalidate>
+
+      <!-- LEFT: configurator + shipping form -->
+      <div class="col-lg-7">
+
+        <h2 class="font-display fw-semibold mb-3" style="font-size:1.5rem;">1. Choose a finish</h2>
+        <div class="row row-cols-1 row-cols-sm-3 g-3 mb-5">
+          <div class="col">
+            <input type="radio" class="swatch-input" name="finish" id="finishWalnut" value="Walnut veneer" data-price="0" checked>
+            <label class="swatch-label w-100" for="finishWalnut">
+              <span class="chip" style="background:#6E4B31;"></span>
+              <span>Walnut veneer</span>
+            </label>
+          </div>
+          <div class="col">
+            <input type="radio" class="swatch-input" name="finish" id="finishAsh" value="Ash veneer" data-price="0">
+            <label class="swatch-label w-100" for="finishAsh">
+              <span class="chip" style="background:#C7B591;"></span>
+              <span>Ash veneer</span>
+            </label>
+          </div>
+          <div class="col">
+            <input type="radio" class="swatch-input" name="finish" id="finishBlack" value="Matte black" data-price="30">
+            <label class="swatch-label w-100" for="finishBlack">
+              <span class="chip" style="background:#1B1B1B;"></span>
+              <span>Matte black <span class="text-ivory-dim">(+$30)</span></span>
+            </label>
+          </div>
+        </div>
+
+        <h2 class="font-display fw-semibold mb-3" style="font-size:1.5rem;">2. Add extras</h2>
+        <div class="d-grid gap-2 mb-5">
+          <div class="form-check p-3 rounded-1" style="border:1px solid var(--line-dark);">
+            <input class="form-check-input addon" type="checkbox" value="1" id="addonBrush" data-price="18">
+            <label class="form-check-label d-flex justify-content-between w-100" for="addonBrush">
+              <span>Anti-static carbon-fiber brush</span><span class="text-ivory-dim">$18</span>
+            </label>
+          </div>
+          <div class="form-check p-3 rounded-1" style="border:1px solid var(--line-dark);">
+            <input class="form-check-input addon" type="checkbox" value="1" id="addonHeadshell" data-price="89">
+            <label class="form-check-label d-flex justify-content-between w-100" for="addonHeadshell">
+              <span>Spare headshell, pre-mounted cartridge</span><span class="text-ivory-dim">$89</span>
+            </label>
+          </div>
+        </div>
+
+        <h2 class="font-display fw-semibold mb-3" style="font-size:1.5rem;">3. Quantity</h2>
+        <div class="mb-5" style="max-width:160px;">
+          <label for="qty" class="form-label">Units</label>
+          <input type="number" class="form-control" id="qty" min="1" max="5" value="1">
+        </div>
+
+        <h2 class="font-display fw-semibold mb-3" style="font-size:1.5rem;">4. Shipping details</h2>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" required>
+            <div class="invalid-feedback">Enter your first name.</div>
+          </div>
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" required>
+            <div class="invalid-feedback">Enter your last name.</div>
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Enter a valid email address.</div>
+          </div>
+          <div class="col-12">
+            <label for="address" class="form-label">Street address</label>
+            <input type="text" class="form-control" id="address" required>
+            <div class="invalid-feedback">Enter your street address.</div>
+          </div>
+          <div class="col-sm-5">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" required>
+            <div class="invalid-feedback">Enter your city.</div>
+          </div>
+          <div class="col-sm-4">
+            <label for="state" class="form-label">State / Region</label>
+            <input type="text" class="form-control" id="state" required>
+            <div class="invalid-feedback">Required.</div>
+          </div>
+          <div class="col-sm-3">
+            <label for="zip" class="form-label">ZIP</label>
+            <input type="text" class="form-control" id="zip" required>
+            <div class="invalid-feedback">Required.</div>
+          </div>
+          <div class="col-12">
+            <label for="country" class="form-label">Country</label>
+            <select class="form-select" id="country" required>
+              <option value="" selected disabled>Choose…</option>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>United Kingdom</option>
+              <option>Philippines</option>
+              <option>Other</option>
+            </select>
+            <div class="invalid-feedback">Select a country.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: order summary -->
+      <div class="col-lg-5">
+        <div class="order-summary p-4 position-lg-sticky" style="top:6.5rem;">
+          <h2 class="font-display fw-semibold mb-4" style="font-size:1.35rem;">Order summary</h2>
+
+          <div class="d-flex justify-content-between mb-2">
+            <span class="text-ivory-dim">Wavelength One (<span id="sumFinish">Walnut veneer</span>)</span>
+            <span class="font-mono" id="sumBase">$649</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2" id="sumFinishPriceRow" style="display:none !important;">
+            <span class="text-ivory-dim">Finish upgrade</span>
+            <span class="font-mono" id="sumFinishPrice">$0</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span class="text-ivory-dim">Extras</span>
+            <span class="font-mono" id="sumAddons">$0</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span class="text-ivory-dim">Quantity</span>
+            <span class="font-mono" id="sumQty">× 1</span>
+          </div>
+          <hr class="hairline">
+          <div class="d-flex justify-content-between mb-1">
+            <span>Total</span>
+            <span class="font-mono fs-5 text-brass" id="sumTotal">$649</span>
+          </div>
+          <p class="small text-ivory-dim mb-4">Refundable $100 deposit due today. Balance due before shipment.</p>
+
+          <button type="submit" class="btn btn-brass btn-lg w-100 mb-3">Reserve now — $100 deposit</button>
+          <p class="small text-ivory-dim mb-0 text-center">This form is a design demo and doesn't process real payments.</p>
+
+          <div id="orderSuccess" class="alert alert-success mt-3 d-none" role="alert">
+            Thanks — your reservation details look complete. In a live store this would move you to secure checkout.
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!-- ============ GUARANTEE ============ -->
+<section id="guarantee" class="section section-paper hairline-top">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <h2 class="font-display fw-semibold mb-3" style="font-size:1.6rem;">The fine print, in plain terms.</h2>
+        <p class="mb-0" style="color:rgba(34,38,43,0.75);">No surprises between what you order and what shows up.</p>
+      </div>
+      <div class="col-lg-8">
+        <div class="row row-cols-1 row-cols-sm-3 g-4">
+          <div class="col">
+            <span class="icon-chip mb-2"><i class="bi bi-arrow-repeat"></i></span>
+            <h3 class="h6 mb-1">100-night trial</h3>
+            <p class="small" style="color:rgba(34,38,43,0.7);">Not the right fit? Return it within 100 nights for a full refund, shipping included.</p>
+          </div>
+          <div class="col">
+            <span class="icon-chip mb-2"><i class="bi bi-shield-check"></i></span>
+            <h3 class="h6 mb-1">5-year warranty</h3>
+            <p class="small" style="color:rgba(34,38,43,0.7);">Covers motor, bearings, and electronics against manufacturing defects.</p>
+          </div>
+          <div class="col">
+            <span class="icon-chip mb-2"><i class="bi bi-truck"></i></span>
+            <h3 class="h6 mb-1">Free shipping, both ways</h3>
+            <p class="small" style="color:rgba(34,38,43,0.7);">Outbound and return shipping are on us within the contiguous US.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHORT FAQ ============ -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <h2 class="font-display fw-semibold mb-4" style="font-size:1.75rem;">Shipping &amp; returns.</h2>
+        <div class="accordion" id="shipFaq">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#s1">
+                When will my order ship?
+              </button>
+            </h3>
+            <div id="s1" class="accordion-collapse collapse show" data-bs-parent="#shipFaq">
+              <div class="accordion-body text-ivory-dim">Current batch ships 3–4 weeks after your deposit is confirmed. You'll get tracking as soon as it leaves the workshop.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s2">
+                Can I change my finish after ordering?
+              </button>
+            </h3>
+            <div id="s2" class="accordion-collapse collapse" data-bs-parent="#shipFaq">
+              <div class="accordion-body text-ivory-dim">Yes, up until your unit enters final assembly. Reach out and we'll update it before the balance is charged.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s3">
+                What happens if I return it?
+              </button>
+            </h3>
+            <div id="s3" class="accordion-collapse collapse" data-bs-parent="#shipFaq">
+              <div class="accordion-body text-ivory-dim">Contact us within 100 nights of delivery, pack it in the original crate, and we'll send a prepaid return label. Refunds are issued once it arrives back at the workshop.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="wl-footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="wl-brand d-inline-flex mb-3" href="index.html"><span class="mark"></span>Wavelength</a>
+        <p class="fine measure">Wavelength Audio designs turntables in Portland, Oregon. Wavelength One is assembled to order in small batches.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="text-ivory mb-3">Site</h6>
+        <ul class="list-unstyled d-grid gap-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="craftsmanship.html">Craftsmanship</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="order.html">Order</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="text-ivory mb-3">Support</h6>
+        <ul class="list-unstyled d-grid gap-2">
+          <li><a href="reviews.html#faq">FAQ</a></li>
+          <li><a href="order.html#guarantee">Warranty</a></li>
+          <li><a href="order.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="text-ivory mb-3">Stay in the loop</h6>
+        <form class="d-flex gap-2" onsubmit="return false;">
+          <label for="footerEmail4" class="visually-hidden">Email address</label>
+          <input id="footerEmail4" type="email" class="form-control" placeholder="you@email.com">
+          <button class="btn btn-outline-ivory" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <hr class="hairline my-4">
+    <p class="fine mb-0">© 2026 Wavelength Audio. Concept design for demonstration purposes only — not an active store.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
