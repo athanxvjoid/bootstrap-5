@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Sportbikes | Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Apex Sportbikes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bikes.html">The Bikes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="card shadow">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="mb-0">Get in Touch</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Interested in our endorsements or want to suggest a new sportbike? Drop us a message!</p>
+                        
+                        <form>
+                            <div class="mb-3">
+                                <label for="userName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="userName" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="userEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="favoriteBike" class="form-label">Favorite Bike from our List</label>
+                                <select class="form-select" id="favoriteBike">
+                                    <option selected>Choose a bike...</option>
+                                    <option value="zx6r">Kawasaki Ninja ZX-6R</option>
+                                    <option value="r6">Yamaha YZF-R6</option>
+                                    <option value="s1000rr">BMW S1000RR</option>
+                                    <option value="panigale">Ducati Panigale V4</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="userMessage" class="form-label">Message</label>
+                                <textarea class="form-control" id="userMessage" rows="4" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-danger w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 fixed-bottom position-relative mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Apex Sportbikes.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
